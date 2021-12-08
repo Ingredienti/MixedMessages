@@ -12,7 +12,8 @@ const selectRandom = (arr) => {
         else
             continue
     }
+    return randomNames
 }
 
-selectRandom(names)
-
+const randomNames = selectRandom(names)
+console.log(`You're such a ${randomNames[0]}, ${randomNames[1]} and ${randomNames[2]}`)
